@@ -40,10 +40,10 @@ export default function Home() {
           </div>
 
           <div className="service-grid">
-            <ServiceCard icon="✦" cls="copilot-logo" title="Copilot & AI" text="Unlock productivity with Microsoft Copilot and custom AI agents." to="/copilot/" />
-            <ServiceCard icon="◆" cls="pp-logo" title="Power Platform" text="Build solutions, automate processes and drive innovation." to="/power-platform/" />
-            <ServiceCard icon="M" cls="m365-logo" title="Microsoft 365" text="Work smarter together with modern collaboration tools." to="/microsoft-365/" />
-            <ServiceCard icon="➤" cls="automate-logo" title="Automation & Integration" text="Use PowerShell and Microsoft Graph to extend what's possible." to="/automation/" />
+            <ServiceCard icon="/images/icons/copilot-ai.svg" title="Copilot & AI" text="Unlock productivity with Microsoft Copilot and custom AI agents." to="/copilot/" />
+            <ServiceCard icon="/images/icons/power-platform.svg" title="Power Platform" text="Build solutions, automate processes and drive innovation." to="/power-platform/" />
+            <ServiceCard icon="/images/icons/microsoft-365.svg" title="Microsoft 365" text="Work smarter together with modern collaboration tools." to="/microsoft-365/" />
+            <ServiceCard icon="/images/icons/automation-integration.svg" title="Automation & Integration" text="Use PowerShell and Microsoft Graph to extend what's possible." to="/automation/" />
           </div>
         </div>
       </section>
@@ -83,10 +83,12 @@ export default function Home() {
   )
 }
 
-function ServiceCard({icon, cls, title, text, to}) {
+function ServiceCard({icon, title, text, to}) {
   return (
     <article className="service-card">
-      <div className={`service-logo ${cls}`}>{icon}</div>
+      <div className="service-icon-wrap">
+        <img className="service-icon-img" src={icon} alt="" aria-hidden="true" />
+      </div>
       <h3>{title}</h3>
       <p>{text}</p>
       <Link to={to}>Learn more →</Link>
