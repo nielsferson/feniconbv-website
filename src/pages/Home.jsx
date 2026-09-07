@@ -86,8 +86,13 @@ export default function Home() {
 function ServiceCard({icon, title, text, to}) {
   return (
     <article className="service-card">
-      <div className="service-icon-wrap">
-        <img className="service-icon-img" src={icon} alt="" aria-hidden="true" />
+      <div className="service-logo">
+        <img
+          src={icon}
+          alt=""
+          aria-hidden="true"
+          style={{ width: '50px', height: '50px', display: 'block' }}
+        />
       </div>
       <h3>{title}</h3>
       <p>{text}</p>
