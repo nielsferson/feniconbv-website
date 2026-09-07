@@ -40,10 +40,10 @@ export default function Home() {
           </div>
 
           <div className="service-grid">
-            <ServiceCard icon="/images/icons/copilot-ai.svg" title="Copilot & AI" text="Unlock productivity with Microsoft Copilot and custom AI agents." to="/copilot/" />
-            <ServiceCard icon="/images/icons/power-platform.svg" title="Power Platform" text="Build solutions, automate processes and drive innovation." to="/power-platform/" />
-            <ServiceCard icon="/images/icons/microsoft-365.svg" title="Microsoft 365" text="Work smarter together with modern collaboration tools." to="/microsoft-365/" />
-            <ServiceCard icon="/images/icons/automation-integration.svg" title="Automation & Integration" text="Use PowerShell and Microsoft Graph to extend what's possible." to="/automation/" />
+            <ServiceCard icon="/images/icons/copilot-ai.png" title="Copilot & AI" text="Unlock productivity with Microsoft Copilot and custom AI agents." to="/copilot/" />
+            <ServiceCard icon="/images/icons/power-platform.png" title="Power Platform" text="Build solutions, automate processes and drive innovation." to="/power-platform/" />
+            <ServiceCard icon="/images/icons/microsoft-365.png" title="Microsoft 365" text="Work smarter together with modern collaboration tools." to="/microsoft-365/" />
+            <ServiceCard icon="/images/icons/automation-integration.png" title="Automation & Integration" text="Use PowerShell and Microsoft Graph to extend what's possible." to="/automation/" />
           </div>
         </div>
       </section>
@@ -91,7 +91,7 @@ function ServiceCard({icon, title, text, to}) {
           src={icon}
           alt=""
           aria-hidden="true"
-          style={{ width: '50px', height: '50px', display: 'block' }}
+          style={{ width: '50px', height: '50px', display: 'block', objectFit: 'contain' }}
         />
       </div>
       <h3>{title}</h3>
