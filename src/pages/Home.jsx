@@ -3,15 +3,14 @@ import { Link } from 'react-router-dom'
 export default function Home() {
   return (
     <>
-      <section className="hero">
-        <div className="hero-bg" />
+      <section className="hero hero-with-image">
         <div className="shell hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">MICROSOFT CLOUD CONSULTING</p>
             <h1>People. Productivity.<br/><span>A smarter tomorrow.</span></h1>
             <p className="lead">
               FENICON helps organizations get the most out of Microsoft 365,
-              Copilot, Power Platform and the modern cloud — with a focus on
+              Copilot, Power Platform and automation — with a focus on people,
               governance and real business value.
             </p>
             <div className="hero-buttons">
@@ -24,17 +23,8 @@ export default function Home() {
               <div><span>↗</span><div><strong>Real impact</strong><small>From strategy to results</small></div></div>
             </div>
           </div>
-
-          <div className="hero-visual">
-            <div className="script-note">Technology<br/>for people</div>
-            <div className="orbit orbit-a" />
-            <div className="orbit orbit-b" />
-            <div className="copilot-core">✦</div>
-            {[
-              ['W','app-word'],['T','app-teams'],['X','app-excel'],['P','app-powerpoint'],
-              ['O','app-outlook'],['S','app-sharepoint'],['N','app-onenote'],['☁','app-cloud']
-            ].map(([t,c]) => <div key={c} className={`app ${c}`}>{t}</div>)}
-            <div className="person-card"><div className="person-head"/><div className="person-body"/><div className="laptop"/></div>
+          <div className="hero-photo">
+            <img src="/images/home/home-hero.webp" alt="Technology for people and solutions for tomorrow" />
           </div>
         </div>
       </section>
@@ -42,7 +32,10 @@ export default function Home() {
       <section className="section">
         <div className="shell">
           <div className="section-top">
-            <div><p className="eyebrow">WHAT WE DO</p><h2>Turning Microsoft technology into real business value.</h2></div>
+            <div>
+              <p className="eyebrow">WHAT WE DO</p>
+              <h2>Turning Microsoft technology into real business value.</h2>
+            </div>
             <Link className="section-link" to="/services/">View all services →</Link>
           </div>
 
@@ -55,12 +48,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="ecosystem-section">
-        <div className="shell">
-          <p className="eyebrow light">THE MICROSOFT ECOSYSTEM</p>
-          <h2>A connected workplace.<br/>A more capable organization.</h2>
-          <p>We bring together people, data and technology across the Microsoft cloud.</p>
-          <Link className="button button-light" to="/services/">Explore the possibilities →</Link>
+      <section className="image-feature image-feature-dark">
+        <div className="shell image-feature-grid">
+          <div>
+            <p className="eyebrow light">THE MICROSOFT ECOSYSTEM</p>
+            <h2>A connected workplace.<br/>A more capable organization.</h2>
+            <p>We bring together people, data and technology across the Microsoft cloud.</p>
+            <Link className="button button-light" to="/services/">Explore the possibilities →</Link>
+          </div>
+          <img src="/images/home/microsoft-ecosystem.webp" alt="Microsoft cloud ecosystem" />
         </div>
       </section>
 
@@ -74,7 +70,12 @@ export default function Home() {
               ['2','Design','Create a tailored solution and roadmap.'],
               ['3','Implement','Deliver with expertise and best practices.'],
               ['4','Grow','Support, optimize and unlock new opportunities.']
-            ].map(([n,t,d]) => <article key={n}><span className="step-num">{n}</span><div><strong>{t}</strong><small>{d}</small></div></article>)}
+            ].map(([n,t,d]) => (
+              <article key={n}>
+                <span className="step-num">{n}</span>
+                <div><strong>{t}</strong><small>{d}</small></div>
+              </article>
+            ))}
           </div>
         </div>
       </section>

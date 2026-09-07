@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="shell footer-grid">
         <Link className="footer-logo" to="/">
-          <img src="/images/fenicon-logo.png" alt="FENICON" />
+          <img src="/images/branding/fenicon-logo.png" alt="FENICON" />
         </Link>
 
         <div className="footer-links">

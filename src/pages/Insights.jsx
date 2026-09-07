@@ -1,2 +1,53 @@
 import PageHero from '../components/PageHero'
-export default function Insights(){return <><PageHero eyebrow="INSIGHTS & ARTICLES" title="Ideas. Insights. Impact." intro="Thoughts, guidance and practical insights about Microsoft 365, Copilot, Power Platform and automation." showCta={false}/><section className="section"><div className="shell content-grid three"><article className="content-card"><p className="eyebrow">COPILOT</p><h2>Getting started with Microsoft Copilot</h2><p>A practical guide for organizations preparing for AI-powered work.</p></article><article className="content-card"><p className="eyebrow">MICROSOFT 365</p><h2>Building a governed modern workplace</h2><p>Practical principles for a productive Microsoft 365 environment.</p></article><article className="content-card"><p className="eyebrow">AUTOMATION</p><h2>Automating with PowerShell and Graph</h2><p>Where automation can remove repetitive administration.</p></article></div></section></>}
+
+const articles = [
+  {
+    tag:'COPILOT',
+    title:'Getting started with Microsoft Copilot',
+    text:'A practical way to think about readiness, governance and adoption.',
+    image:'/images/insights/insights-hero.webp'
+  },
+  {
+    tag:'MICROSOFT 365',
+    title:'Building a governed modern workplace',
+    text:'Clear principles for collaboration, ownership and lifecycle management.',
+    image:'/images/home/microsoft-ecosystem.webp'
+  },
+  {
+    tag:'AUTOMATION',
+    title:'Automating with PowerShell and Graph',
+    text:'Where automation can remove repetitive administration and improve consistency.',
+    image:'/images/automation/automation-hero.webp'
+  },
+]
+
+export default function Insights() {
+  return (
+    <>
+      <PageHero
+        eyebrow="INSIGHTS & ARTICLES"
+        title="Ideas. Insights. Impact."
+        intro="Practical guidance about Microsoft 365, Copilot, Power Platform and automation."
+        image="/images/insights/insights-hero.webp"
+        imageAlt="FENICON insights"
+        showCta={false}
+      />
+      <section className="section">
+        <div className="shell">
+          <div className="content-grid three">
+            {articles.map(a =>
+              <article className="article-card" key={a.title}>
+                <img src={a.image} alt="" />
+                <div>
+                  <p className="eyebrow">{a.tag}</p>
+                  <h2>{a.title}</h2>
+                  <p>{a.text}</p>
+                </div>
+              </article>
+            )}
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}

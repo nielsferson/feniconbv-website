@@ -19,7 +19,7 @@ export default function Header() {
     <header className="site-header">
       <div className="shell nav">
         <NavLink to="/" className="brand">
-          <img src="/images/fenicon-logo.png" alt="FENICON" />
+          <img src="/images/branding/fenicon-logo.png" alt="FENICON" />
         </NavLink>
 
         <button className="menu-button" onClick={() => setOpen(!open)} aria-label="Toggle navigation">

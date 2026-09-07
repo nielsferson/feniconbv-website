@@ -1,3 +1,48 @@
 import PageHero from '../components/PageHero'
-export default function Copilot(){return <><PageHero eyebrow="COPILOT & AI" title="Turn Copilot into real business value." intro="FENICON helps organizations prepare for Microsoft 365 Copilot, identify valuable scenarios, establish governance and build custom agents."/><FeatureSection items={[['Readiness assessment','Review data, permissions and governance.'],['Use-case design','Prioritize scenarios that create measurable value.'],['Copilot Studio agents','Build agents grounded in business content and processes.'],['Adoption & governance','Define ownership, guardrails and operating models.']]}/></>}
-function FeatureSection({items}){return <section className="section"><div className="shell split-content"><div><p className="eyebrow">FROM READINESS TO ADOPTION</p><h2>AI starts with a strong Microsoft 365 foundation.</h2></div><div className="feature-list">{items.map(([t,d],i)=><article key={t}><span>0{i+1}</span><div><h3>{t}</h3><p>{d}</p></div></article>)}</div></div></section>}
+
+export default function Copilot() {
+  return (
+    <>
+      <PageHero
+        eyebrow="COPILOT & AI"
+        title="Turn ideas into impact with Microsoft Copilot."
+        intro="From readiness and governance to Copilot Studio agents, FENICON helps organizations introduce AI in a practical, secure and scalable way."
+        image="/images/copilot/copilot-hero.webp"
+        imageAlt="Microsoft Copilot and AI"
+        secondaryLabel="Explore Microsoft 365"
+        secondaryTo="/microsoft-365/"
+      />
+      <FeatureSection items={[
+        ['Assess','Review data, permissions, licensing and readiness.'],
+        ['Design','Select valuable scenarios and define the target solution.'],
+        ['Implement','Configure Copilot, agents and supporting services.'],
+        ['Scale','Establish governance, adoption and repeatable patterns.']
+      ]}/>
+      <section className="section soft-section">
+        <div className="shell">
+          <p className="eyebrow">REAL-WORLD USE CASES</p>
+          <div className="content-grid three">
+            <article className="content-card"><h2>Knowledge</h2><p>Agents grounded in trusted organizational content.</p></article>
+            <article className="content-card"><h2>Productivity</h2><p>Summarization, preparation and day-to-day assistance.</p></article>
+            <article className="content-card"><h2>Process automation</h2><p>Connect AI with workflows, data and business actions.</p></article>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
+
+function FeatureSection({items}) {
+  return (
+    <section className="section">
+      <div className="shell split-content">
+        <div><p className="eyebrow">HOW WE HELP</p><h2>AI starts with a strong foundation.</h2></div>
+        <div className="feature-list">
+          {items.map(([t,d],i) =>
+            <article key={t}><span>0{i+1}</span><div><h3>{t}</h3><p>{d}</p></div></article>
+          )}
+        </div>
+      </div>
+    </section>
+  )
+}
