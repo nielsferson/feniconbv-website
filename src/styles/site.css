@@ -228,7 +228,7 @@ h2 { font-size:clamp(38px,4vw,58px); line-height:1.04; letter-spacing:-.035em; }
 
   .nav-cta { display:none; }
 
-  .menu-button { display:flex; align-items:center; justify-content:center; position:absolute; right:32px; top:50%; transform:translateY(-50%); margin:0; padding:10px; cursor:pointer; }
+  .menu-button { display:flex; align-items:center; justify-content:center; position:absolute; right:24px; top:50%; transform:translateY(-50%); margin:0; padding:10px; cursor:pointer; }
 
   .nav-links { display:none; position:absolute; top:68px; left:0; right:0; background:#fff; padding:14px 20px; flex-direction:column; }
 
