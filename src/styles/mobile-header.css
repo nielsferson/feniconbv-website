@@ -1,0 +1,15 @@
+@media (max-width:800px) {
+  .nav {
+    position:relative;
+    padding-left:24px;
+    padding-right:24px;
+  }
+
+  .brand {
+    margin-left:0;
+  }
+
+  .menu-button {
+    right:24px;
+  }
+}
