@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Users, Target, TrendingUp } from 'lucide-react'
 import usePageMeta from '../hooks/usePageMeta'
 
 export default function Home() {
@@ -23,9 +24,9 @@ export default function Home() {
               <Link className="button button-outline" to="/services/">Explore our services</Link>
             </div>
             <div className="hero-benefits">
-              <div><span>◎</span><div><strong>People first</strong><small>Technology that empowers</small></div></div>
-              <div><span>◇</span><div><strong>Practical solutions</strong><small>Built around your needs</small></div></div>
-              <div><span>↗</span><div><strong>Real impact</strong><small>From strategy to results</small></div></div>
+              <div><span><Users size={22} /></span><div><strong>People first</strong><small>Technology that empowers</small></div></div>
+              <div><span><Target size={22} /></span><div><strong>Practical solutions</strong><small>Built around your needs</small></div></div>
+              <div><span><TrendingUp size={22} /></span><div><strong>Real impact</strong><small>From strategy to results</small></div></div>
             </div>
           </div>
           <div className="hero-photo">

@@ -66,9 +66,9 @@ h2 { font-size:clamp(38px,4vw,58px); line-height:1.04; letter-spacing:-.035em; }
 
 .hero-benefits { display:flex; gap:40px; margin-top:44px; }
 
-.hero-benefits>div { display:flex; gap:10px; }
+.hero-benefits>div { display:flex; gap:10px; align-items:center; }
 
-.hero-benefits span { font-size:26px; color:var(--blue); }
+.hero-benefits span { display:flex; color:var(--blue); }
 
 .hero-benefits div div { display:flex; flex-direction:column; }
 
