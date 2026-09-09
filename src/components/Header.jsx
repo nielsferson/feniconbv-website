@@ -22,11 +22,17 @@ export default function Header() {
           <img src="/images/branding/fenicon-logo.png" alt="FENICON" />
         </NavLink>
 
-        <button className="menu-button" onClick={() => setOpen(!open)} aria-label="Toggle navigation">
+        <button
+          className="menu-button"
+          onClick={() => setOpen(!open)}
+          aria-label="Toggle navigation"
+          aria-expanded={open}
+          aria-controls="primary-navigation"
+        >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        <nav className={`nav-links ${open ? 'open' : ''}`}>
+        <nav id="primary-navigation" className={`nav-links ${open ? 'open' : ''}`}>
           {items.map(([to, label]) => (
             <NavLink
               key={to}

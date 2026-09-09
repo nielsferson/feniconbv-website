@@ -1,6 +1,11 @@
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
 
 export default function Copilot() {
+  usePageMeta(
+    'Copilot & AI',
+    'From readiness and governance to Copilot Studio agents, FENICON helps organizations introduce AI in a practical, secure and scalable way.'
+  )
   return (
     <>
       <PageHero

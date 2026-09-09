@@ -1,6 +1,11 @@
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
 
 export default function Microsoft365() {
+  usePageMeta(
+    'Microsoft 365',
+    'Build a modern workplace around Teams, SharePoint, OneDrive and Microsoft 365 with governance that supports both users and IT.'
+  )
   return (
     <>
       <PageHero

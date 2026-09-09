@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom'
+import usePageMeta from '../hooks/usePageMeta'
 
 export default function Home() {
+  usePageMeta(
+    'Microsoft Cloud Consulting',
+    'FENICON helps organizations get the most out of Microsoft 365, Copilot, Power Platform and automation — with a focus on people, governance and real business value.'
+  )
   return (
     <>
       <section className="hero hero-with-image">
@@ -56,7 +61,7 @@ export default function Home() {
             <p>We bring together people, data and technology across the Microsoft cloud.</p>
             <Link className="button button-light" to="/services/">Explore the possibilities →</Link>
           </div>
-          <img src="/images/home/microsoft-ecosystem.webp" alt="Microsoft cloud ecosystem" />
+          <img src="/images/home/microsoft-ecosystem.webp" alt="Microsoft cloud ecosystem" loading="lazy" />
         </div>
       </section>
 
@@ -91,6 +96,7 @@ function ServiceCard({icon, title, text, to}) {
           src={icon}
           alt=""
           aria-hidden="true"
+          loading="lazy"
           style={{ width: '50px', height: '50px', display: 'block', objectFit: 'contain' }}
         />
       </div>

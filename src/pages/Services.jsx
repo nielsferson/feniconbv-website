@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
 
 export default function Services() {
+  usePageMeta(
+    'Services',
+    'FENICON combines Microsoft 365, AI, Power Platform and automation to create practical solutions around the way your organization actually works.'
+  )
   const services = [
     ['Copilot & AI','Readiness, adoption, governance and custom agents.','/copilot/'],
     ['Power Platform','Business apps, workflows, Dataverse and governance.','/power-platform/'],
