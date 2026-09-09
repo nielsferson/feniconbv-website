@@ -5,7 +5,7 @@ import usePageMeta from '../hooks/usePageMeta'
 export default function Home() {
   usePageMeta(
     'Microsoft Cloud Consulting',
-    'FENICON helps organizations get the most out of Microsoft 365, Copilot, Power Platform and automation — with a focus on people, governance and real business value.'
+    'FENICON helps organizations get the most out of Microsoft 365, Copilot, Power Platform and automation with a focus on people, governance and real business value.'
   )
   return (
     <>
