@@ -18,7 +18,7 @@ export default function About() {
       <section className="section">
         <div className="shell about-page-grid">
           <div className="about-photo">
-            <img src="/images/about/about-niels.webp" alt="FENICON consultant" loading="lazy" />
+            <img src="/images/about/about-niels.jpg" alt="Niels Ferson, FENICON consultant" loading="lazy" />
           </div>
           <div>
             <p className="eyebrow">FENICON</p>
