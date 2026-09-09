@@ -1,6 +1,11 @@
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
 
 export default function About() {
+  usePageMeta(
+    'About',
+    'FENICON is a Microsoft-focused consulting company built around a simple principle: technology should make work clearer, easier and more effective.'
+  )
   return (
     <>
       <PageHero
@@ -13,7 +18,7 @@ export default function About() {
       <section className="section">
         <div className="shell about-page-grid">
           <div className="about-photo">
-            <img src="/images/about/about-niels.webp" alt="FENICON consultant" />
+            <img src="/images/about/about-niels.webp" alt="FENICON consultant" loading="lazy" />
           </div>
           <div>
             <p className="eyebrow">FENICON</p>

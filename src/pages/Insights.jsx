@@ -1,4 +1,5 @@
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
 
 const articles = [
   {
@@ -22,6 +23,10 @@ const articles = [
 ]
 
 export default function Insights() {
+  usePageMeta(
+    'Insights',
+    'Practical guidance about Microsoft 365, Copilot, Power Platform and automation.'
+  )
   return (
     <>
       <PageHero
@@ -37,7 +42,7 @@ export default function Insights() {
           <div className="content-grid three">
             {articles.map(a =>
               <article className="article-card" key={a.title}>
-                <img src={a.image} alt="" />
+                <img src={a.image} alt="" loading="lazy" />
                 <div>
                   <p className="eyebrow">{a.tag}</p>
                   <h2>{a.title}</h2>

@@ -1,6 +1,11 @@
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
 
 export default function Automation() {
+  usePageMeta(
+    'Automation & Integration',
+    'Use PowerShell, Microsoft Graph and API-driven patterns to make administration and business processes faster, repeatable and easier to govern.'
+  )
   return (
     <>
       <PageHero

@@ -1,6 +1,11 @@
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
 
 export default function PowerPlatform() {
+  usePageMeta(
+    'Power Platform',
+    'Create business applications and automation with Power Apps, Power Automate and Dataverse while keeping architecture and governance in scope.'
+  )
   return (
     <>
       <PageHero
