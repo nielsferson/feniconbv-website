@@ -12,7 +12,6 @@ export default function Home() {
       <section className="hero hero-with-image">
         <div className="shell hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow">MICROSOFT CLOUD CONSULTING</p>
             <h1>People. Productivity.<br/><span>A smarter tomorrow.</span></h1>
             <p className="lead">
               FENICON helps organizations get the most out of Microsoft 365,
