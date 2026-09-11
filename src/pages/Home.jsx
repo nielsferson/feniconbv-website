@@ -16,7 +16,7 @@ export default function Home() {
             <h1>People. Productivity.<br/><span>A smarter tomorrow.</span></h1>
             <p className="lead">
               FENICON helps organizations get the most out of Microsoft 365,
-              Copilot, Power Platform and automation — with a focus on people,
+              Copilot, Power Platform and automation with a focus on people,
               governance and real business value.
             </p>
             <div className="hero-buttons">
