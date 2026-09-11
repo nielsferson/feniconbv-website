@@ -38,7 +38,6 @@ export default function Home() {
         <div className="shell">
           <div className="section-top">
             <div>
-              <p className="eyebrow">WHAT WE DO</p>
               <h2>Turning Microsoft technology into real business value.</h2>
             </div>
             <Link className="section-link" to="/services/">View all services →</Link>
@@ -56,7 +55,6 @@ export default function Home() {
       <section className="image-feature image-feature-dark">
         <div className="shell image-feature-grid">
           <div>
-            <p className="eyebrow light">THE MICROSOFT ECOSYSTEM</p>
             <h2>A connected workplace.<br/>A more capable organization.</h2>
             <p>We bring together people, data and technology across the Microsoft cloud.</p>
             <Link className="button button-light" to="/services/">Explore the possibilities →</Link>
@@ -67,7 +65,6 @@ export default function Home() {
 
       <section className="section">
         <div className="shell">
-          <p className="eyebrow">OUR APPROACH</p>
           <h2>From insight to impact.</h2>
           <div className="steps">
             {[
