@@ -19,7 +19,7 @@ export default function Home() {
               governance and real business value.
             </p>
             <div className="hero-buttons">
-              <Link className="button button-primary" to="/contact/">Let's talk →</Link>
+              <Link className="button button-primary" to="/contact/">Let's talk</Link>
               <Link className="button button-outline" to="/services/">Explore our services</Link>
             </div>
             <div className="hero-benefits">
