@@ -9,7 +9,6 @@ export default function PowerPlatform() {
   return (
     <>
       <PageHero
-        eyebrow="POWER PLATFORM"
         title="Turn ideas into solutions."
         intro="Create business applications and automation with Power Apps, Power Automate and Dataverse while keeping architecture and governance in scope."
         image="/images/power-platform/power-platform-hero.webp"
