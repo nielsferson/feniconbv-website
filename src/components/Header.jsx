@@ -45,7 +45,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <NavLink className="button button-primary nav-cta" to="/contact/">Let's talk →</NavLink>
+        <NavLink className="button button-primary nav-cta" to="/contact/">Let's talk</NavLink>
       </div>
     </header>
   )
