@@ -9,7 +9,6 @@ export default function Copilot() {
   return (
     <>
       <PageHero
-        eyebrow="COPILOT & AI"
         title="Turn ideas into impact with Microsoft Copilot."
         intro="From readiness and governance to Copilot Studio agents, FENICON helps organizations introduce AI in a practical, secure and scalable way."
         image="/images/copilot/copilot-hero.webp"
@@ -25,7 +24,6 @@ export default function Copilot() {
       ]}/>
       <section className="section soft-section">
         <div className="shell">
-          <p className="eyebrow">REAL-WORLD USE CASES</p>
           <div className="content-grid three">
             <article className="content-card"><h2>Knowledge</h2><p>Agents grounded in trusted organizational content.</p></article>
             <article className="content-card"><h2>Productivity</h2><p>Summarization, preparation and day-to-day assistance.</p></article>
@@ -41,7 +39,7 @@ function FeatureSection({items}) {
   return (
     <section className="section">
       <div className="shell split-content">
-        <div><p className="eyebrow">HOW WE HELP</p><h2>AI starts with a strong foundation.</h2></div>
+        <div><h2>AI starts with a strong foundation.</h2></div>
         <div className="feature-list">
           {items.map(([t,d],i) =>
             <article key={t}><span>0{i+1}</span><div><h3>{t}</h3><p>{d}</p></div></article>
