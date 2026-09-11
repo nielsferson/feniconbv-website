@@ -26,7 +26,7 @@ export default function Services() {
           <div className="content-grid four">
             {services.map(([t,d,u]) =>
               <article className="content-card" key={t}>
-                <h2>{t}</h2><p>{d}</p><Link to={u}>Explore →</Link>
+                <h2>{t}</h2><p>{d}</p><Link to={u}>Explore</Link>
               </article>
             )}
           </div>
