@@ -9,7 +9,6 @@ export default function Automation() {
   return (
     <>
       <PageHero
-        eyebrow="AUTOMATION & INTEGRATION"
         title="Connect. Automate. Scale."
         intro="Use PowerShell, Microsoft Graph and API-driven patterns to make administration and business processes faster, repeatable and easier to govern."
         image="/images/automation/automation-hero.webp"
