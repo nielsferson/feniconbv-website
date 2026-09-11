@@ -9,7 +9,6 @@ export default function About() {
   return (
     <>
       <PageHero
-        eyebrow="ABOUT FENICON"
         title="Technology for people."
         intro="FENICON is a Microsoft-focused consulting company built around a simple principle: technology should make work clearer, easier and more effective."
         image="/images/about/about-hero.webp"
@@ -21,7 +20,6 @@ export default function About() {
             <img src="/images/about/about-niels.jpg" alt="Niels Ferson, FENICON consultant" loading="lazy" />
           </div>
           <div>
-            <p className="eyebrow">FENICON</p>
             <h2>Technical depth with a practical mindset.</h2>
             <p>FENICON focuses on Microsoft 365, Copilot, AI agents, Power Platform and automation, combining architecture and governance with hands-on implementation.</p>
             <div className="mini-values">
