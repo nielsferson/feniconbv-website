@@ -46,23 +46,6 @@ export default function Insights() {
         imageAlt="FENICON insights"
         showCta={false}
       />
-      <section className="section">
-        <div className="shell">
-          <div className="content-grid three">
-            {articles.map(a =>
-              <article className="article-card" key={a.title}>
-                <img src={a.image} alt="" loading="lazy" />
-                <div>
-                  <p className="eyebrow">{a.tag}</p>
-                  <h2>{a.title}</h2>
-                  <p>{a.text}</p>
-                </div>
-              </article>
-            )}
-          </div>
-        </div>
-      </section>
-
       <section className="section soft-section">
         <div className="shell">
           <p className="eyebrow">MICROSOFT RESOURCES</p>
@@ -74,6 +57,23 @@ export default function Insights() {
                 <a href={b.url} target="_blank" rel="noreferrer">
                   Visit blog <ExternalLink size={16} style={{ verticalAlign: 'middle', marginLeft: '4px' }} />
                 </a>
+              </article>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="shell">
+          <div className="content-grid three">
+            {articles.map(a =>
+              <article className="article-card" key={a.title}>
+                <img src={a.image} alt="" loading="lazy" />
+                <div>
+                  <p className="eyebrow">{a.tag}</p>
+                  <h2>{a.title}</h2>
+                  <p>{a.text}</p>
+                </div>
               </article>
             )}
           </div>
