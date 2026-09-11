@@ -30,7 +30,6 @@ export default function Insights() {
   return (
     <>
       <PageHero
-        eyebrow="INSIGHTS & ARTICLES"
         title="Ideas. Insights. Impact."
         intro="Practical guidance about Microsoft 365, Copilot, Power Platform and automation."
         image="/images/insights/insights-hero.webp"
