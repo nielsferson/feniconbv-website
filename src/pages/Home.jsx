@@ -40,7 +40,7 @@ export default function Home() {
             <div>
               <h2>Turning Microsoft technology into real business value.</h2>
             </div>
-            <Link className="section-link" to="/services/">View all services →</Link>
+            <Link className="section-link" to="/services/">View all services</Link>
           </div>
 
           <div className="service-grid">
@@ -57,7 +57,7 @@ export default function Home() {
           <div>
             <h2>A connected workplace.<br/>A more capable organization.</h2>
             <p>We bring together people, data and technology across the Microsoft cloud.</p>
-            <Link className="button button-light" to="/services/">Explore the possibilities →</Link>
+            <Link className="button button-light" to="/services/">Explore the possibilities</Link>
           </div>
           <img src="/images/home/microsoft-ecosystem.webp" alt="Microsoft cloud ecosystem" loading="lazy" />
         </div>
@@ -99,7 +99,7 @@ function ServiceCard({icon, title, text, to}) {
       </div>
       <h3>{title}</h3>
       <p>{text}</p>
-      <Link to={to}>Learn more →</Link>
+      <Link to={to}>Learn more</Link>
     </article>
   )
 }
