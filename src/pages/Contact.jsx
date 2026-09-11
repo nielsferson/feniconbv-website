@@ -17,12 +17,12 @@ export default function Contact() {
             <article className="contact-card">
               <span><Mail size={22} /></span><h2>Email</h2>
               <p>For consulting requests, projects and general questions.</p>
-              <a href="mailto:niels.ferson@hotmail.com">niels.ferson@hotmail.com →</a>
+              <a href="mailto:niels.ferson@hotmail.com">niels.ferson@hotmail.com</a>
             </article>
             <article className="contact-card">
               <span><Linkedin size={22} /></span><h2>LinkedIn</h2>
               <p>Connect with Niels Ferson.</p>
-              <a href="https://www.linkedin.com/in/niels-ferson/" target="_blank" rel="noreferrer">Open LinkedIn profile ↗</a>
+              <a href="https://www.linkedin.com/in/niels-ferson/" target="_blank" rel="noreferrer">Open LinkedIn profile</a>
             </article>
           </div>
           <img className="contact-office" src="/images/contact/contact-office.webp" alt="FENICON consulting office" />
