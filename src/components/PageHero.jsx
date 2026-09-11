@@ -18,7 +18,7 @@ export default function PageHero({
           <h1>{title}</h1>
           <p>{intro}</p>
           <div className="hero-buttons">
-            {showCta && <Link className="button button-primary" to="/contact/">Let's talk →</Link>}
+            {showCta && <Link className="button button-primary" to="/contact/">Let's talk</Link>}
             {secondaryLabel && secondaryTo &&
               <Link className="button button-outline" to={secondaryTo}>{secondaryLabel}</Link>
             }
