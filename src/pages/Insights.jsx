@@ -1,5 +1,14 @@
+import { ExternalLink } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import usePageMeta from '../hooks/usePageMeta'
+
+const microsoftBlogs = [
+  { name: 'Copilot', url: 'https://techcommunity.microsoft.com/category/Microsoft365Copilot' },
+  { name: 'Copilot Studio', url: 'https://techcommunity.microsoft.com/category/microsoft-copilot/discussions/copilot-studio' },
+  { name: 'Teams', url: 'https://techcommunity.microsoft.com/category/microsoftteams' },
+  { name: 'Power Apps', url: 'https://techcommunity.microsoft.com/category/powerapps' },
+  { name: 'Power Automate', url: 'https://techcommunity.microsoft.com/category/powerautomate' },
+]
 
 const articles = [
   {
@@ -36,6 +45,23 @@ export default function Insights() {
         imageAlt="FENICON insights"
         showCta={false}
       />
+      <section className="section soft-section">
+        <div className="shell">
+          <p className="eyebrow">MICROSOFT RESOURCES</p>
+          <h2>More from Microsoft.</h2>
+          <div className="content-grid three" style={{ marginTop: '32px' }}>
+            {microsoftBlogs.map(b =>
+              <article className="content-card" key={b.name}>
+                <h2>{b.name}</h2>
+                <a href={b.url} target="_blank" rel="noreferrer">
+                  Visit blog <ExternalLink size={16} style={{ verticalAlign: 'middle', marginLeft: '4px' }} />
+                </a>
+              </article>
+            )}
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="shell">
           <div className="content-grid three">
