@@ -5,7 +5,6 @@ export default function Contact() {
   return (
     <>
       <PageHero
-        eyebrow="CONTACT"
         title="Let's build a smarter tomorrow."
         intro="Have a question or want to explore how FENICON can help your organization? Start with the challenge, not the product."
         image="/images/contact/contact-hero.webp"
