@@ -16,7 +16,6 @@ export default function Services() {
   return (
     <>
       <PageHero
-        eyebrow="SERVICES"
         title="Microsoft expertise. Real business impact."
         intro="FENICON combines Microsoft 365, AI, Power Platform and automation to create practical solutions around the way your organization actually works."
         image="/images/services/services-hero.webp"
@@ -35,7 +34,6 @@ export default function Services() {
       </section>
       <section className="section soft-section">
         <div className="shell">
-          <p className="eyebrow">WHY FENICON</p>
           <h2>Technology with a practical purpose.</h2>
           <div className="steps">
             {[
