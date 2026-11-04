@@ -1,9 +1,11 @@
 import PageHero from '../components/PageHero'
 import usePageMeta from '../hooks/usePageMeta'
+import usePageSchema from '../hooks/usePageSchema'
 import { pageMeta } from '../content/pageMeta'
 
 export default function Automation() {
   usePageMeta(pageMeta.automation)
+  usePageSchema(pageMeta.automation)
   return (
     <>
       <PageHero

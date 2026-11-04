@@ -1,0 +1,17 @@
+# FENICON
+
+> FENICON is a Belgium-based Microsoft-focused consulting company helping organizations get the most out of Microsoft 365, Copilot and Power Platform, with a focus on governance, security and real business value.
+
+## Services
+
+- [Microsoft Copilot & Copilot Studio Consulting](https://fenicon.be/copilot/): Readiness, governance and Copilot Studio agents to introduce Microsoft Copilot in a practical, secure and scalable way.
+- [Power Platform Consulting & Governance](https://fenicon.be/power-platform/): Business applications and automation with Power Apps, Power Automate and Dataverse, with architecture and governance built in from the start.
+- [Microsoft 365 Workplace Consulting](https://fenicon.be/microsoft-365/): A modern, governed workplace around Teams, SharePoint, OneDrive and Microsoft 365 that supports both users and IT.
+- [Automation & Microsoft Graph Integration](https://fenicon.be/automation/): PowerShell, Microsoft Graph and API-driven automation to make administration and business processes faster and easier to govern.
+
+## More
+
+- [Services overview](https://fenicon.be/services/): All FENICON services in one place.
+- [About FENICON](https://fenicon.be/about/): Who FENICON is and how it approaches Microsoft consulting.
+- [Insights](https://fenicon.be/insights/): Practical guidance on Microsoft 365, Copilot, Power Platform and automation, plus official Microsoft Tech Community resources.
+- [Contact](https://fenicon.be/contact/): How to get in touch with FENICON.
