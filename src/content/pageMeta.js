@@ -56,3 +56,10 @@ export const pageMeta = {
     image: '/images/contact/contact-hero.webp',
   },
 }
+
+// Routes that represent an actual service offering (as opposed to Home,
+// About, Insights, Contact, or the Services overview page). These get a
+// schema.org Service JSON-LD block, built from their existing title and
+// description, both at runtime (usePageSchema) and at build time
+// (scripts/prerender.mjs).
+export const serviceRouteKeys = ['copilot', 'microsoft365', 'powerPlatform', 'automation']
