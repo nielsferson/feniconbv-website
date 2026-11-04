@@ -1,7 +1,10 @@
 import { Mail, Linkedin } from 'lucide-react'
 import PageHero from '../components/PageHero'
+import usePageMeta from '../hooks/usePageMeta'
+import { pageMeta } from '../content/pageMeta'
 
 export default function Contact() {
+  usePageMeta(pageMeta.contact)
   return (
     <>
       <PageHero
@@ -14,13 +17,14 @@ export default function Contact() {
       <section className="section">
         <div className="shell contact-feature">
           <div className="contact-stack">
+            <h2 className="sr-only">Contact options</h2>
             <article className="contact-card">
-              <span><Mail size={22} /></span><h2>Email</h2>
+              <span><Mail size={22} /></span><h3>Email</h3>
               <p>For consulting requests, projects and general questions.</p>
               <a href="mailto:niels.ferson@hotmail.com">niels.ferson@hotmail.com</a>
             </article>
             <article className="contact-card">
-              <span><Linkedin size={22} /></span><h2>LinkedIn</h2>
+              <span><Linkedin size={22} /></span><h3>LinkedIn</h3>
               <p>Connect with Niels Ferson.</p>
               <a href="https://www.linkedin.com/in/niels-ferson/" target="_blank" rel="noreferrer">Open LinkedIn profile</a>
             </article>

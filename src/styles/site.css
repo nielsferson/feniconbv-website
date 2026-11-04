@@ -6,6 +6,8 @@
 
 html { scroll-behavior:smooth; }
 
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
 body { margin:0; font-family:"Segoe UI Variable","Segoe UI",Arial,sans-serif; color:var(--text); line-height:1.45; }
 
 a {
@@ -162,7 +164,7 @@ h2 { font-size:clamp(38px,4vw,58px); line-height:1.04; letter-spacing:-.035em; }
 
 .content-grid.three { grid-template-columns:repeat(3,1fr); }
 
-.content-card h2 { font-size:28px; }
+.content-card h2,.content-card h3 { font-size:28px; }
 
 .content-card p { color:#5a6a7e; }
 
@@ -185,6 +187,8 @@ h2 { font-size:clamp(38px,4vw,58px); line-height:1.04; letter-spacing:-.035em; }
 .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
 
 .contact-card>span { width:52px; height:52px; display:grid; place-items:center; background:#eef6ff; color:var(--blue); border-radius:10px; font-size:22px; font-weight:800; }
+
+.contact-card h3 { font-size:clamp(38px,4vw,58px); line-height:1.04; letter-spacing:-.035em; }
 
 .footer { padding:28px 0; border-top:1px solid #e7eaf0; }
 
@@ -291,7 +295,7 @@ h2 { font-size:clamp(38px,4vw,58px); line-height:1.04; letter-spacing:-.035em; }
 
 .article-card>div { padding:24px; }
 
-.article-card h2 { font-size:28px; }
+.article-card h2,.article-card h3 { font-size:28px; }
 
 .article-card p:not(.eyebrow) { color:#5a6a7e; }
 

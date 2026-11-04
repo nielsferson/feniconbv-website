@@ -1,11 +1,9 @@
 import PageHero from '../components/PageHero'
 import usePageMeta from '../hooks/usePageMeta'
+import { pageMeta } from '../content/pageMeta'
 
 export default function PowerPlatform() {
-  usePageMeta(
-    'Power Platform',
-    'Create business applications and automation with Power Apps, Power Automate and Dataverse while keeping architecture and governance in scope.'
-  )
+  usePageMeta(pageMeta.powerPlatform)
   return (
     <>
       <PageHero
@@ -15,13 +13,16 @@ export default function PowerPlatform() {
         imageAlt="Microsoft Power Platform"
       />
       <section className="section">
-        <div className="shell content-grid four">
-          {[
-            ['Power Apps','Canvas and model-driven solutions around real business processes.'],
-            ['Power Automate','Cloud flows and workflow automation across Microsoft services.'],
-            ['Dataverse','Structured data models, security and scalable application foundations.'],
-            ['Governance','Environment strategy, standards, security groups and lifecycle controls.'],
-          ].map(([t,d]) => <article className="content-card" key={t}><h2>{t}</h2><p>{d}</p></article>)}
+        <div className="shell">
+          <h2>Power Platform capabilities</h2>
+          <div className="content-grid four">
+            {[
+              ['Power Apps','Canvas and model-driven solutions around real business processes.'],
+              ['Power Automate','Cloud flows and workflow automation across Microsoft services.'],
+              ['Dataverse','Structured data models, security and scalable application foundations.'],
+              ['Governance','Environment strategy, standards, security groups and lifecycle controls.'],
+            ].map(([t,d]) => <article className="content-card" key={t}><h3>{t}</h3><p>{d}</p></article>)}
+          </div>
         </div>
       </section>
     </>
