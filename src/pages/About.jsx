@@ -1,11 +1,9 @@
 import PageHero from '../components/PageHero'
 import usePageMeta from '../hooks/usePageMeta'
+import { pageMeta } from '../content/pageMeta'
 
 export default function About() {
-  usePageMeta(
-    'About',
-    'FENICON is a Microsoft-focused consulting company built around a simple principle: technology should make work clearer, easier and more effective.'
-  )
+  usePageMeta(pageMeta.about)
   return (
     <>
       <PageHero

@@ -1,11 +1,9 @@
 import PageHero from '../components/PageHero'
 import usePageMeta from '../hooks/usePageMeta'
+import { pageMeta } from '../content/pageMeta'
 
 export default function Copilot() {
-  usePageMeta(
-    'Copilot & AI',
-    'From readiness and governance to Copilot Studio agents, FENICON helps organizations introduce AI in a practical, secure and scalable way.'
-  )
+  usePageMeta(pageMeta.copilot)
   return (
     <>
       <PageHero
@@ -24,10 +22,11 @@ export default function Copilot() {
       ]}/>
       <section className="section soft-section">
         <div className="shell">
+          <h2>Real-world use cases</h2>
           <div className="content-grid three">
-            <article className="content-card"><h2>Knowledge</h2><p>Agents grounded in trusted organizational content.</p></article>
-            <article className="content-card"><h2>Productivity</h2><p>Summarization, preparation and day-to-day assistance.</p></article>
-            <article className="content-card"><h2>Process automation</h2><p>Connect AI with workflows, data and business actions.</p></article>
+            <article className="content-card"><h3>Knowledge</h3><p>Agents grounded in trusted organizational content.</p></article>
+            <article className="content-card"><h3>Productivity</h3><p>Summarization, preparation and day-to-day assistance.</p></article>
+            <article className="content-card"><h3>Process automation</h3><p>Connect AI with workflows, data and business actions.</p></article>
           </div>
         </div>
       </section>

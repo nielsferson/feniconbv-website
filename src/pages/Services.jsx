@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
 import usePageMeta from '../hooks/usePageMeta'
+import { pageMeta } from '../content/pageMeta'
 
 export default function Services() {
-  usePageMeta(
-    'Services',
-    'FENICON combines Microsoft 365, AI, Power Platform and automation to create practical solutions around the way your organization actually works.'
-  )
+  usePageMeta(pageMeta.services)
   const services = [
     ['Copilot & AI','Readiness, adoption, governance and custom agents.','/copilot/'],
     ['Power Platform','Business apps, workflows, Dataverse and governance.','/power-platform/'],
@@ -23,10 +21,11 @@ export default function Services() {
       />
       <section className="section">
         <div className="shell">
+          <h2>Our services</h2>
           <div className="content-grid four">
             {services.map(([t,d,u]) =>
               <article className="content-card" key={t}>
-                <h2>{t}</h2><p>{d}</p><Link to={u}>Explore</Link>
+                <h3>{t}</h3><p>{d}</p><Link to={u}>Explore</Link>
               </article>
             )}
           </div>

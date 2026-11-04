@@ -1,6 +1,7 @@
 import { ExternalLink } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import usePageMeta from '../hooks/usePageMeta'
+import { pageMeta } from '../content/pageMeta'
 
 const microsoftBlogs = [
   { name: 'Copilot', url: 'https://techcommunity.microsoft.com/category/Microsoft365Copilot' },
@@ -32,10 +33,7 @@ const articles = [
 ]
 
 export default function Insights() {
-  usePageMeta(
-    'Insights',
-    'Practical guidance about Microsoft 365, Copilot, Power Platform and automation.'
-  )
+  usePageMeta(pageMeta.insights)
   return (
     <>
       <PageHero
@@ -52,7 +50,7 @@ export default function Insights() {
           <div className="content-grid three" style={{ marginTop: '32px' }}>
             {microsoftBlogs.map(b =>
               <article className="content-card" key={b.name}>
-                <h2>{b.name}</h2>
+                <h3>{b.name}</h3>
                 <a href={b.url} target="_blank" rel="noreferrer">
                   Visit blog <ExternalLink size={16} style={{ verticalAlign: 'middle', marginLeft: '4px' }} />
                 </a>
@@ -64,13 +62,14 @@ export default function Insights() {
 
       <section className="section">
         <div className="shell">
+          <h2>Latest articles</h2>
           <div className="content-grid three">
             {articles.map(a =>
               <article className="article-card" key={a.title}>
                 <img src={a.image} alt="" loading="lazy" />
                 <div>
                   <p className="eyebrow">{a.tag}</p>
-                  <h2>{a.title}</h2>
+                  <h3>{a.title}</h3>
                   <p>{a.text}</p>
                 </div>
               </article>

@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom'
 import { Users, Target, TrendingUp } from 'lucide-react'
 import usePageMeta from '../hooks/usePageMeta'
+import { pageMeta } from '../content/pageMeta'
 
 export default function Home() {
-  usePageMeta(
-    'Microsoft Cloud Consulting',
-    'FENICON helps organizations get the most out of Microsoft 365, Copilot, Power Platform and automation with a focus on people, governance and real business value.'
-  )
+  usePageMeta(pageMeta.home)
   return (
     <>
       <section className="hero hero-with-image">
